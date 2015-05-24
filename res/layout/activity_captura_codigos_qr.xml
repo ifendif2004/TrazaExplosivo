@@ -1,0 +1,95 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.alfonso.trazaexplosivo.CapturaCodigosQR" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="@string/txt_empresa"
+                android:textColor="@color/rojo"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btInicializar"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/initCapturas" />
+
+            <ImageButton
+                android:id="@+id/btCaptura"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/web_camera_icon" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_formato_captura"
+                android:textColor="@color/rojo" />
+
+            <TextView
+                android:id="@+id/tvFormat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/azul" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/txt_result_captura"
+                android:textColor="@color/rojo" />
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/blanco" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btGuardar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/botones"
+                android:layout_marginRight="@dimen/botones"
+                android:layout_marginTop="10dp"
+                android:text="@string/btGuardar" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

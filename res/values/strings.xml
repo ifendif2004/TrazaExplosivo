@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intracex</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="btCargarFichero">bt Cargar Fichero</string>
+    <string name="btGuardar">Guardar código</string>
+    <string name="btLecturaQRFinalizada">Captura finalizada</string>
+    <string name="title_activity_lista_xml">Seleccionar fichero Xml</string>
+    <string name="ruta">ruta</string>
+    <string name="title_activity_lectura_qr">Lectura de códigos QR</string>
+    <string name="title_activity_logon">Logon</string>
+    <string name="txt_empresa">INTRACEX</string>
+    <string name="title_activity_captura_codigos_qr">CapturaCodigosQR</string>
+    <string name="initCapturas">Inicializar capturas</string>
+    <string name="title_activity_lista_captura__qr">Códigos QR leídos</string>
+    <string name="title_listadoQR">Códigos capturados</string>
+    <string name="lblContra">Contraseña</string>
+    <string name="lblUser">Usuario</string>
+    <string name="lbBtLogin">Entrar</string>
+    <string name="lblEmail">www.intracex.com</string>
+    <string name="lblColaboracion">Con la colaboracion de Provol 2007 S.L.</string>
+    <string name="lblCorreo1">danielmerinof@intracex.com</string>
+    <string name="lblCorreo2">franciscoalvarezg@intracex.com</string>
+    <string name="lblCopyright">© Copyright 2015 INTRACEX S.L.</string>
+    <string name="lbListarXml">Visualizar fichero Xml</string>
+    <string name="lbEmpresa">INTRACEX</string>
+    <string name="lbActividadEmpresa">International Traceability of Explosive</string>
+    <string name="txt_cargar_fichero_xml">Cargar nuevo fichero</string>
+    <string name="txt_visualizar_fichero_xml">Ver datos cargados</string>
+    <string name="txt_captura_codigos_qr">Capturar códigos QR</string>
+    <string name="txt_visualizar_qr_capturados">Ver QR capturados</string>
+    <string name="txt_formato_captura">Formato de captura</string>
+    <string name="txt_result_captura">Resultado de la captura</string>
+    <string name="txt_validarQR">Resultado final</string>
+    <string name="title_activity_resumen">Resumen</string>
+    <string name="txt_GenerarXml">Generar Xml</string>
+    <string name="txt_fichero_cargado">Fichero cargado</string>
+
+</resources>

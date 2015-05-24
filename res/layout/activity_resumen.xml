@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context="com.alfonso.trazaexplosivo.Resumen" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="@string/txt_empresa"
+        android:textColor="@color/rojo"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btGenerarXml"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/botones"
+        android:layout_marginRight="@dimen/botones"
+        android:layout_marginTop="50dp"
+        android:text="@string/txt_GenerarXml" />
+
+</LinearLayout>
