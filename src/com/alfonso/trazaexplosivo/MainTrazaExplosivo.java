@@ -30,7 +30,7 @@ public class MainTrazaExplosivo extends Activity {
 		super.onCreate(savedInstanceState);
 
 		directorioXml = "/storage/sdcard0/Download";
-//		 directorioXml = "/data/data/com.alfonso.trazaexplosivo";
+		// directorioXml = "/data/data/com.alfonso.trazaexplosivo";
 		directorioApp = getFilesDir().getPath();
 
 		SharedPreferences prefs = getSharedPreferences("PreferenciasTrazaExplosivo", Context.MODE_PRIVATE);
@@ -85,7 +85,7 @@ public class MainTrazaExplosivo extends Activity {
 	// Cargar el fichero Xml a tratar/validar -----------------------------------------------------------------------
 	private void buscarFicheroXml() {
 		System.out.println("buscarFicheroXml");
-		
+
 		btCargarXml = (Button) findViewById(R.id.btCargarXml);
 		btCargarXml.setOnClickListener(new OnClickListener() {
 
@@ -115,9 +115,9 @@ public class MainTrazaExplosivo extends Activity {
 
 	}
 
-	// Capturar códigos QR  -----------------------------------------------------------------------------------
+	// Capturar códigos QR -----------------------------------------------------------------------------------
 	private void capturarCodigosQR() {
-		
+
 		Button btCargarQR = (Button) findViewById(R.id.btCargarQR);
 		btCargarQR.setOnClickListener(new OnClickListener() {
 
@@ -145,7 +145,7 @@ public class MainTrazaExplosivo extends Activity {
 
 	}
 
-	// Resultado del proceso  --------------------------------------------------------------------------------------------
+	// Resultado del proceso --------------------------------------------------------------------------------------------
 	private void resultadoFinal() {
 		btValidarQR = (Button) findViewById(R.id.btValidarQR);
 		btValidarQR.setOnClickListener(new OnClickListener() {
@@ -156,8 +156,7 @@ public class MainTrazaExplosivo extends Activity {
 				startActivity(intent);
 			}
 		});
-		
-	}
 
+	}
 
 }

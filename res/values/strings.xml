@@ -38,5 +38,9 @@
     <string name="title_activity_resumen">Resumen</string>
     <string name="txt_GenerarXml">Generar Xml</string>
     <string name="txt_fichero_cargado">Fichero cargado</string>
+    <string name="txt_XmlValidado">El fichero Xml está validado</string>
+    <string name="txt_XmlNoValidado">El fichero Xml tiene códigos QR sin validar</string>
+    <string name="txt_QRValidado">El fichero de captura QR es correcto</string>
+    <string name="txt_QRNoValidado">Existen códigos QR capturados no incluidos en el fichero Xml</string>
 
 </resources>

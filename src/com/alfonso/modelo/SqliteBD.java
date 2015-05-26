@@ -24,7 +24,9 @@ public class SqliteBD implements IGestionBD {
 		this.context = context;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#crearBD()
 	 */
 	@Override
@@ -58,7 +60,9 @@ public class SqliteBD implements IGestionBD {
 		}
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#altaBD(java.lang.String, java.lang.String, double, double, java.lang.String, boolean)
 	 */
 	@Override
@@ -75,7 +79,9 @@ public class SqliteBD implements IGestionBD {
 		}
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#altaCabeceraBD(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
 	 */
 	@Override
@@ -91,7 +97,9 @@ public class SqliteBD implements IGestionBD {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#inicializarBD(java.lang.String)
 	 */
 	@Override
@@ -106,7 +114,9 @@ public class SqliteBD implements IGestionBD {
 		}
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#updateBD(java.lang.String, java.lang.String, boolean)
 	 */
 	@Override
@@ -121,7 +131,9 @@ public class SqliteBD implements IGestionBD {
 		}
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#hayDatos(java.lang.String)
 	 */
 	@Override
@@ -146,7 +158,9 @@ public class SqliteBD implements IGestionBD {
 		return retorno;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#consultaRegistro(java.lang.String, java.lang.String)
 	 */
 	@Override
@@ -171,7 +185,9 @@ public class SqliteBD implements IGestionBD {
 		return retorno;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#closeBD()
 	 */
 	@Override
@@ -180,7 +196,9 @@ public class SqliteBD implements IGestionBD {
 		sqliteDB.close();
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#leerBD(java.lang.String)
 	 */
 	@Override
@@ -215,7 +233,9 @@ public class SqliteBD implements IGestionBD {
 		return datos;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#leerTabla(java.lang.String)
 	 */
 	@Override
@@ -258,7 +278,9 @@ public class SqliteBD implements IGestionBD {
 
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.alfonso.modelo.IGestionBD#leerBDCabecera(java.lang.String)
 	 */
 	@Override
@@ -282,6 +304,30 @@ public class SqliteBD implements IGestionBD {
 		c.close();
 		System.out.println("En SqliteBD  retorno: " + retorno);
 		return retorno;
+	}
+
+	@Override
+	public boolean hayDatosPendientes(String tabla) {
+
+		Boolean retorno;
+		Cursor c;
+		String sentencia = "SELECT COUNT(*) FROM " + tabla + " WHERE ENCONTRADO = 'false'";
+		System.out.println("En SqliteBD hayDatosPendientes Sql: " + sentencia);
+		try {
+			c = sqliteDB.rawQuery(sentencia, null);
+			c.moveToFirst();
+			System.out.println("En SqliteBD  c.getCount(): " + c.getCount() + "  c.getString(0): " + c.getString(0));
+			if (Integer.valueOf(c.getString(0)) != 0) {
+				retorno = true;
+			} else {
+				retorno = false;
+			}
+		} catch (Exception e) {
+			return false;
+		}
+		c.close();
+		return retorno;
+
 	}
 
 }

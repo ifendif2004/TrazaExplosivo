@@ -17,6 +17,28 @@
         android:textColor="@color/rojo"
         android:textSize="30sp" />
 
+    <TextView
+        android:id="@+id/tvXmlValidado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="@string/txt_XmlValidado"
+        android:textColor="@color/azul"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvQRValidado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:text="@string/txt_QRValidado"
+        android:textColor="@color/azul"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btGenerarXml"
         android:layout_width="fill_parent"

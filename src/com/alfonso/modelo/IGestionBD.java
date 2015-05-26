@@ -16,6 +16,8 @@ public interface IGestionBD {
 
 	public abstract boolean hayDatos(String tabla);
 
+	public abstract boolean hayDatosPendientes(String tabla);
+
 	public abstract boolean consultaRegistro(String tabla, String codigoqr);
 
 	public abstract void closeBD();
